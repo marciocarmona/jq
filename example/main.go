@@ -7,7 +7,7 @@ import (
 	"log"
 	"time"
 	"net/http"
-	"github.com/mattaitchison/jq"
+	"github.com/marciocarmona/jq"
 )
 
 func proxyGitHub(rw http.ResponseWriter, req *http.Request) {
