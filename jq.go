@@ -31,6 +31,11 @@ type Jq struct {
 	channel 	chan *message
 }
 
+func SetCacheSize(size int) (err error) {
+	cache, err = lru.New(size)
+	return
+}
+
 func NewJq(program string) (*Jq, error) {
 	if (cache == nil) {
 		cache, _ = lru.New(128)

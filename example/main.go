@@ -27,6 +27,7 @@ type jqHandlerWrapper struct {
 
 func main() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
+	jq.SetCacheSize(8)
 	
 	var p http.HandlerFunc = proxyGitHub
 	s := &http.Server{
