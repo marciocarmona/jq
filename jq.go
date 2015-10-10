@@ -1,7 +1,7 @@
 package jq
 
 /*
-#cgo LDFLAGS: -ljq -all-static
+#cgo LDFLAGS: -ljq
 #include <jq.h>
 #include <stdlib.h>
 */
